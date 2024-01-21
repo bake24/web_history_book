@@ -1,0 +1,92 @@
+/* Начальная часть где идеи название книги */
+.name {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.book_name {
+    display: flex;
+    justify-content: center;
+    margin-top:10%;
+}
+.razgovornik {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.intro p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* Предисловие */
+.predislovie h2{
+    white-space: pre;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    font-style: italic;
+}
+.predislovie p{
+    white-space: pre;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* Начало содержания */
+.chapters{
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+ul.oglavl {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+    }
+    
+ul.oglavl li {
+    border-bottom: 1px dotted #C2C2C2; /* Необязателен. Здесь задается толщина, тип и цвет точек */
+    position: relative;
+    padding: 0;
+    margin-bottom:5px; /* Необязателен. Задается для установки расстояния между блоками li */
+    }
+    
+ul.oglavl li span {
+    background-color: #FFF; /* Это необходимо, чтобы перекрыть точки фоном */
+    margin: 0;
+    font-style: italic;
+    
+    }
+
+ul.oglavl li span.text, ul.oglavl li span.page {
+    bottom: -5px; /* Смещаем значимые блоки, чтобы они перекрыли точки */
+    text-decoration: none;
+    color: black;
+    }
+
+ul.oglavl span.text {
+    position :relative;
+    margin-right:7em; /* Задается чтобы текст не заходил на номера страниц */
+    padding-right:2px; /* Необязателен. Задается чтобы точки не подходили вплотную к концу текста */
+    
+    }
+    
+ul.oglavl span.page {
+    position: absolute;
+    right: 0;
+    padding-left:2px; /* Необязателен. Задается чтобы точки не подходили вплотную к номерам страниц */
+    }
+.back-button p{
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+    margin-top: 5%;
+    
+}
